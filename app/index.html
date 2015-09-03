@@ -12,11 +12,16 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/work.css">
+    <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
+    <link rel="import" href="bower_components/paper-card/paper-card.html">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
   </head>
   <body ng-app="siteApp" bgcolor="#eceff1">
     <!--[if lte IE 8]>
@@ -47,7 +52,7 @@
 
 
     
-    <div ng-view></div>
+    <div class="fade" ng-view></div>
 
 
 
@@ -82,13 +87,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/resume.js"></script>
         <script src="scripts/controllers/work.js"></script>
         <!-- endbuild -->
-    <script>
-      $(document).ready(function(){
-        $('.tooltipped').tooltip({delay: 0});
-      });
-    </script>
 </body>
 </html>

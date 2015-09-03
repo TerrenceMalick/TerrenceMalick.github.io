@@ -11,18 +11,33 @@
     margin: 150px auto;
     text-align: center;
     font-size: 48px;
-    font-family: Work Sans;
     color: #546E7A;
   }
 
   .links {
     width: 100%;
+    margin: 50px auto;
     text-align: center;
     font-size: 16px;
-  }
-
-  .stitch {
-    color: #FF5722;
+      .stitch {
+        color: #FF5722;
+        margin: 15px;
+        display: block;
+        transition: transform 0.5s;
+      }
+      .aboutlink {
+        display: inline-block;
+        &:hover + .stitch {
+          transform:rotate(360deg);
+        }
+      }
+      .worklink {
+        display: inline-block;
+        &:hover + .stitch {
+          transform:rotate(360deg);
+        }
+      }
+      
   }
 }
 

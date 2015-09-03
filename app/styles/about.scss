@@ -1,0 +1,17 @@
+// bower:scss
+@import "materialize/sass/materialize.scss";
+// endbower
+
+.about-content {
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.responsive-img {
+	filter: grayscale(100%);
+}
+
+.divider {
+	background-color: #B0BEC5 !important;
+}
