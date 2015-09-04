@@ -48,3 +48,9 @@ body {
 .fade.ng-leave-active {
     opacity: 0;
 }
+
+.fixed-action-btn {
+    height: 100px;
+    width: 100px;
+    z-index: 1000;
+}
