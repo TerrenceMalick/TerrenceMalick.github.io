@@ -1,0 +1,56 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+html {
+    height: 100%;
+    position: relative;
+    height: 100%;
+    z-index: 1;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    font-family: Work Sans;
+    overflow: hidden;
+}
+
+.fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 1;
+}
+
+.fade.ng-animate {
+    -webkit-transition: all .5s ease;
+    transition: all 0.5s ease;
+}
+.fade.ng-enter {
+    opacity: 0;
+}
+.fade.ng-enter-active {
+    opacity: 1;
+}
+.fade.ng-leave {
+    opacity: 1;
+}
+.fade.ng-leave-active {
+    opacity: 0;
+}
+
+.fixed-action-btn {
+    height: 100px;
+    width: 100px;
+    z-index: 1000;
+}

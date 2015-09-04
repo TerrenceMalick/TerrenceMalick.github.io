@@ -1,0 +1,14 @@
+// bower:scss
+@import "materialize/sass/materialize.scss";
+// endbower
+
+.work-content {
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 300px;
+  li {
+	padding-top: 24px;
+	z-index: 100;
+  }
+}

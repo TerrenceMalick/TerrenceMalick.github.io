@@ -1,0 +1,48 @@
+// bower:scss
+@import "materialize/sass/materialize.scss";
+// endbower
+
+a {
+  display: inline;
+  margin: 50px;
+  color: #607D8B;
+}
+
+.landing {
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+
+  .title {
+    width: 100%;
+    margin: 200px auto;
+    font-size: 48px;
+    color: #546E7A;
+  }
+
+    .links {
+      /* width: 100%; */
+      margin: 0 auto;
+      font-size: 16px;
+      display: block;
+        .link {
+          margin: 30px auto;
+          /* width: 100%; */
+          display: table;
+          &:hover ~ .stitch {
+            transform:rotate(180deg);
+          }
+        }
+        .stitch {
+          color: #FF5722;
+          margin-top: -80px;
+          display: block;
+          transition: transform 0.2s;
+        }
+  }
+  
+}
+
+
+
